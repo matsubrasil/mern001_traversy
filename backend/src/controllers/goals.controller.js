@@ -8,8 +8,12 @@ const getOneGoal = (req, res) => {
 };
 
 const setGoal = (req, res) => {
-  const { name } = req.body;
-  res.status(201).json({ message: `POST goals: ${name}` });
+  const { text } = req.body;
+  if (!text) {
+    res.status(400);
+    throw new Error('Please add a text');
+  }
+  res.status(201).json({ message: `POST goals: ${text}` });
 };
 
 const updateGoal = (req, res) => {
