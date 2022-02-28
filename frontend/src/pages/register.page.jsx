@@ -33,8 +33,9 @@ export const Register = () => {
     if (isSuccess || user) {
       navigate('/');
     }
-
-    dispatch(reset);
+    // console.log('useEffect ==>reset');
+    dispatch(reset());
+    // console.log('useEffect ==>reset2');
   }, [user, isSuccess, isError, message, navigate, dispatch]);
 
   const onChange = (e) => {
