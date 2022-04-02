@@ -1,3 +1,4 @@
 export * from './header.component';
 export * from './spinner.component';
-export * from './goalForm.component';
+export * from './goal-form.component';
+export * from './goal-item.component';

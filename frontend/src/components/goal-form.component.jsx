@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { createGoal } from './../features/goals/goal.slice';
+import { createGoal } from '../features/goals/goal.slice';
 
 export const GoalForm = () => {
   const [text, setText] = useState('');
-  console.log(text);
+  // console.log(text);
   const dispatch = useDispatch();
 
   const onSubmit = (e) => {
