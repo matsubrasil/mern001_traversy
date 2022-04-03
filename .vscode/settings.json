@@ -1,3 +1,10 @@
 {
-  "cSpell.words": ["browserslist", "mern", "reduxjs", "toastify", "traversy"]
+  "cSpell.words": [
+    "browserslist",
+    "mern",
+    "postbuild",
+    "reduxjs",
+    "toastify",
+    "traversy"
+  ]
 }
